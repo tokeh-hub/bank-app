@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { useGlobalContext } from '../context'
 import { FaTimes } from 'react-icons/fa'
+import logo from '../img/real logo.png'
 // import Danger from '../component.js/Danger'
 
 export default function Login() {
@@ -27,27 +28,23 @@ export default function Login() {
         else{
          const user =  arr.find(detail=> detail.username===name)
           if(pwd===user.password){setLogged(true);
-          }
-            
-            
-        
-        //   else console.log('Hello')
-         
+          } 
     }
     
     }
     return (
         <div className='login'>
              <header >
-                <h1>BANK LOGO</h1>
+                <img src={logo} alt='access'></img>
             </header>
+            <h3 style={{textAlign:'center'}}>Enter Your Login Details or Sign Up</h3>
             <p className={unregistered?'unregistered show':'unregistered'}>Not a registered user<span onClick={()=>setUnregistered(false)}><FaTimes/></span></p>
             <p className={incorrect?'incorrect show':'incorrect'}>Incorrect password or username<span onClick={()=>setIncorrect(false)}><FaTimes/></span></p>
             <form className='login-form'>
                  <input type='text' placeholder='Username' value={name} onChange={e=>setName(e.target.value)} required ></input>
                  <input type='text'  placeholder='Password' value={pwd} onChange={e=>setPwd(e.target.value)} required></input>
-                 <button type='button'className='btn' onClick={checkLogin}>Login</button>
-                 <button type='button' className='btn' onClick={()=>setRegister(true)}>Register</button>
+                 <button type='button'className='btn' onClick={checkLogin}>SIGN IN</button>
+                 <button type='button' className='btn' onClick={()=>setRegister(true)}>SIGN UP</button>
             </form>
         </div>
     )
