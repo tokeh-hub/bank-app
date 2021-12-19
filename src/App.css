@@ -5,11 +5,16 @@
 }
 
 body,html{
-  background-color: #f12;
-
+  background-color: black;
+  color:white;
+}
+header img{
+  height: 10vmin;
+  margin-top: 0;
+  margin-left: -100px;
 }
 .App{
-  max-width: 1300px;
+  max-width: 1300;
   margin: 0 auto;
   padding: 20px;
   height: 100%;
@@ -35,11 +40,13 @@ body,html{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 90px;
   position: relative;
+  border: 1px solid #fd6a02;
+  box-shadow:   0 0 15px rgba(0, 0, 0, 0.2);
 
 }
 input{
@@ -51,6 +58,8 @@ input{
   border-radius: 5px;
   /* border: none; */
   outline: none;
+  background-color: rgb(77, 74, 74);
+  color: rgb(201, 194, 194);
 }
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -67,10 +76,10 @@ input[type=number]::-webkit-inner-spin-button {
   border: transparent;
   outline: none;
   border-radius: 5px;
-  color: #f12;
+  color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color:#fd6a02
 }
 .btn-reg{
   width: 80% ;
@@ -86,7 +95,8 @@ input[type=number]::-webkit-inner-spin-button {
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #f12;
+  background-color: #fd6a02;
+  text-transform: uppercase;
 }
 /* .login{
   max-width: 1300px;
