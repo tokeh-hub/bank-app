@@ -20,7 +20,7 @@ const AppProvider = ({children}) => {
         setArr(details)
     }
     console.log(arr)
-    useEffect(()=>fetchApi(),[])
+    useEffect(()=>setInterval(()=>fetchApi(),5000),[])
      
     
         const [data,setData] = useState({
