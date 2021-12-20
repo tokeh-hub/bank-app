@@ -11,16 +11,24 @@ body,html{
 header img{
   height: 10vmin;
   margin-top: 0;
-  margin-left: -100px;
+  /* margin-left: -100px; */
+}
+.welcome,.login h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 .App{
-  max-width: 1300;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   height: 100%;
 }
 .container{
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   height: 100%;
@@ -98,12 +106,12 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #fd6a02;
   text-transform: uppercase;
 }
-/* .login{
+.login{
   max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
   height: 100%;
-} */
+}
 .login-form{
   display: flex;
   flex-direction: column;
@@ -141,6 +149,7 @@ input[type=number]::-webkit-inner-spin-button {
   -ms-transform: translate(-50%,-50%);
   z-index: 9;
   position: relative;
+  box-shadow:   0 0 15px rgba(0, 0, 0, 0.2);
 }
 .signed,.danger{
   position: absolute;
@@ -159,6 +168,7 @@ input[type=number]::-webkit-inner-spin-button {
   -ms-transform: translate(-50%,-50%);
   z-index: 9;
   position: relative;
+  box-shadow:   0 0 15px rgba(0, 0, 0, 0.2);
 }
 .cancel-success{
   position:absolute;
@@ -215,7 +225,10 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 @media screen and (min-width:600px) {
-     .App,.container{
+     .container,.login{
        max-width: 800px;
+     }
+     .welcome,.login h3{
+       font-size: 25px;
      }
 }

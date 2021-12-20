@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { useGlobalContext } from '../context'
 import { FaTimes } from 'react-icons/fa'
-import logo from '../img/real logo.png'
+
 // import Danger from '../component.js/Danger'
 
 export default function Login() {
@@ -34,8 +34,8 @@ export default function Login() {
     }
     return (
         <div className='login'>
-             <header >
-                <img src={logo} alt='access'></img>
+             <header className='welcome' >
+                WELCOME TO ACCESSIBLE!
             </header>
             <h3 style={{textAlign:'center'}}>Enter Your Login Details or Sign Up</h3>
             <p className={unregistered?'unregistered show':'unregistered'}>Not a registered user<span onClick={()=>setUnregistered(false)}><FaTimes/></span></p>
