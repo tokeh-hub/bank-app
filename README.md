@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-
+# This is a simple html page that lets a user register their details for internet banking and then lets them login with the same details
+# It prevents a user already registered from registering again 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
